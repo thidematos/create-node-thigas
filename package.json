@@ -1,7 +1,8 @@
 {
-  "name": "portifolio-api",
+  "name": "@thiagolmatos/create-node-thigas",
   "version": "1.0.0",
   "description": "",
+  "bin": "./bin/cli.js",
   "main": "test.js",
   "scripts": {
     "start": "nodemon server.js"
