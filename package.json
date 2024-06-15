@@ -1,6 +1,6 @@
 {
   "name": "@thiagolmatos/create-node-thigas",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "",
   "bin": "./bin/cli.js",
   "main": "test.js",
