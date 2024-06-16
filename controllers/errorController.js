@@ -1,4 +1,4 @@
-import AppError from '../utils/appError.mjs';
+const AppError = require('../utils/appError');
 
 const sendErrorDev = (err, res) => {
   res.status(err.statusCode).json({
@@ -47,7 +47,7 @@ const handleValidationDb = (err) => {
   return new AppError(message, 400);
 };
 
-const globalErrorHandler = (err, req, res, next) => {
+module.exports = (err, req, res, next) => {
   err.statusCode = err.statusCode || 500;
 
   console.log(err);
@@ -72,5 +72,3 @@ const globalErrorHandler = (err, req, res, next) => {
     sendErrorProd(error, res);
   }
 };
-
-export default globalErrorHandler;
